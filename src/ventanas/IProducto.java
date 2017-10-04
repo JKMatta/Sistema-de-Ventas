@@ -52,8 +52,13 @@ import javax.swing.JOptionPane;
  */
 public class IProducto extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form IProducto
+    /*
+Las propiedades de los text field del formulario de
+Registro de Productos no controla la longitud de
+CODIGO, CODIGO DE BARRAS, COD DE FABRICANTE,
+DESCRIPCION, STOCK MIN, UBICACIÓN, PESO,
+UTILIDAD %, IGV/IVA, COSTO, PRECIO AL POR MAYOR,
+PRECIO AL POR MENOR.
      */
     private CProducto controllerProducto;
     private ArrayList<Producto> productos;
