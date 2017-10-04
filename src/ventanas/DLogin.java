@@ -1,6 +1,8 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ Al iniciar el login del Sistema Ventas inicia con el
+usuario “codigolite” y que al poner ingresar sin haber
+ingresado ninguna contraseña ingresa al sistema
+deveria de limpiar el password al momento de iniciar el login
  */
 package ventanas;
 
