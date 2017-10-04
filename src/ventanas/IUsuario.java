@@ -18,6 +18,8 @@
     validar la fecha de registro y nacimiento para evitar
     errores de fechas que no concuerden.
 */
+
+
 package ventanas;
 
 import config.AppConfig;
