@@ -1,3 +1,7 @@
+
+//   AL momento de dar chick en el  boton nuevo no limpia
+//   la lista de productos registrados. 
+
 package ventanas;
 
 import controllers.CAlmacen;
