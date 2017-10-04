@@ -1,9 +1,14 @@
 
 /*
- * IUsuario.java
- *
- * Created on 28/01/2013, 02:24:27 PM
- */
+    Configurar y delimitar la longitud de los text field
+    txtDni, txtCodigo, txtLogn, txtNombre, txtApellido, 
+    txtPassword, txtFono, txtNextel, txtEmail, txtFono2
+    las cuales no tienen un limite de caracteres.
+
+    Validar el dcFechaRegistro y dcFechaNacimiento para
+    validar la fecha de registro y nacimiento para evitar
+    errores de fechas que no concuerden.
+*/
 package ventanas;
 
 import config.AppConfig;

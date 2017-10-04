@@ -25,7 +25,7 @@ public class BaseConexion {
     private static String host = "localhost";
     private static String dataBase = "gventas"; //nombre base de datos
     private static String user = "root"; // usuario de la base de datos
-    private static String pass = ""; // contraseña de la base de datos
+    private static String pass = "root123456"; // contraseña de la base de datos
     public static int TODO = 1;
     public static int SOLO_STATEMENT = 2;
     public static int SOLO_RESULTSET = 3;
