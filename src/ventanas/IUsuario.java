@@ -890,6 +890,13 @@ private void bntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     CAMBIAR CONTRASEÑA .
 */
 
+/*
+    El botón MODIFICAR y GRABAR no cumple con su
+    funcionalidad de grabar los campos opcionales,
+    evitando asi la funcionalidad y mal manejo de
+    datos.
+*/
+
 private void bntModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntModificarActionPerformed
     ECampos.buscarBotones(pnlPaginador, false, null);
     ECampos.setEditableTexto(pnlCmpObligatorios, true, null, false, "");
