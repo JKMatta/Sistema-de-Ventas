@@ -715,6 +715,14 @@ public class IProveedores extends javax.swing.JInternalFrame {
         chbEstado.setEnabled(true);
     }//GEN-LAST:event_bntModificarActionPerformed
 
+    /*
+        El botón nuevo no limpia la lista de proveedores,
+        para poder registrar un nuevo proveedor.
+    
+        Después de registrar un proveedor ponemos botón
+        nuevo y no limpia la lista de proveedores.
+    */
+    
     private void bntNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntNuevoActionPerformed
        //ECampos.buscarBotones(this.pnlBuscador, false, null);
        ECampos.setEditableTexto(this.pnlEntradas, true, null,true,"");
