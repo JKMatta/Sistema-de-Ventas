@@ -879,6 +879,17 @@ private void bntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
        
 }//GEN-LAST:event_bntCancelarActionPerformed
 
+/*
+    Bloquear la caja de texto de contraseña cuando se
+    usa el botón MODIFICAR para evitar confusión con el
+    usuario.
+    
+    Se ingresa datos en la caja de texto contraseña,
+    debido a que cuando usamos el botón MODIFICAR
+    este se habilita obviando que existe el botón
+    CAMBIAR CONTRASEÑA .
+*/
+
 private void bntModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntModificarActionPerformed
     ECampos.buscarBotones(pnlPaginador, false, null);
     ECampos.setEditableTexto(pnlCmpObligatorios, true, null, false, "");
