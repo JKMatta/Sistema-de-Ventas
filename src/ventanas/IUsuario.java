@@ -1,6 +1,15 @@
 
 /*
-    Configurar y delimitar la longitud de los text field
+    Los TextFiel txtNombre y txtApellido no validan el
+    ingreso de caracteres alfabeticos, en este caso
+    permite ingresar cualquier tipo de caracter disponible
+    generando un mal manejo de datos y errores en la base
+    de datos.
+*/
+
+
+/*
+    Configurar y delimitar la longitud de los TextField
     txtDni, txtCodigo, txtLogn, txtNombre, txtApellido, 
     txtPassword, txtFono, txtNextel, txtEmail, txtFono2
     las cuales no tienen un limite de caracteres.
