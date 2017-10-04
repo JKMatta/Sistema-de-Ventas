@@ -1,8 +1,16 @@
 
 /*
- * IUsuario.java
- *
- * Created on 28/01/2013, 02:24:27 PM
+Los TextFiel txtNombre y txtApellido no validan el
+    ingreso de caracteres alfabeticos, en este caso
+    permite ingresar cualquier tipo de caracter disponible
+    generando un mal manejo de datos y errores en la base
+    de datos.
+   validar de los TextField, txtDni, txtCodigo, txtLogn,
+    txtNombre, txtApellido, 
+    txtPassword, txtFono, txtNextel, txtEmail, txtFono2,
+     dcFechaRegistro y dcFechaNacimiento para
+    validar la fecha de registro y nacimiento para evitar
+    errores de fechas que no concuerden.
  */
 package ventanas;
 
