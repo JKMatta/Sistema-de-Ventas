@@ -358,6 +358,11 @@ public class IProveedores extends javax.swing.JInternalFrame {
         txtCiudad.setEditable(false);
         txtCiudad.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtCiudad.setPreferredSize(new java.awt.Dimension(320, 25));
+        txtCiudad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCiudadActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -976,6 +981,10 @@ public class IProveedores extends javax.swing.JInternalFrame {
         cerrarVentana();
     }//GEN-LAST:event_formInternalFrameClosing
 
+    private void txtCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCiudadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCiudadActionPerformed
+
     private void cerrarVentana()
     {
         int opcio = JOptionPane.showInternalConfirmDialog(this, "Perderá todos los datos"
@@ -1029,6 +1038,17 @@ public class IProveedores extends javax.swing.JInternalFrame {
             chbEstado.setForeground(Color.WHITE);
         }
     }
+    
+    /*
+        La caja de texto donde se registra el proveedor no valida la longitud
+        de caracteres, de ruc, teléfono y número de cuenta, lo cual podría
+        causar un error al registrar.
+
+        Ingresamos caracteres incorrectos de ruc, número de cuenta, teléfono,
+        nextel, móvil y fax, me permite guardar encima muestra el mensaje de
+        confirmación. 
+    */
+    
     public void setFiltroTexto()
     {
         Helper.setFiltraEntrada(txtRuc.getDocument(), FiltraEntrada.SOLO_NUMEROS, 15, false);
