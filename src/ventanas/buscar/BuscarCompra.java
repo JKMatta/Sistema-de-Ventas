@@ -106,7 +106,7 @@ public class BuscarCompra extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
         jPanel1.add(jLabel2, gridBagConstraints);
 
-        spItems.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), Integer.valueOf(0), null, Integer.valueOf(1)));
+        spItems.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         spItems.setPreferredSize(new java.awt.Dimension(120, 20));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -126,6 +126,16 @@ public class BuscarCompra extends javax.swing.JPanel {
         txtPrecioMayor.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
         txtPrecioMayor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPrecioMayor.setPreferredSize(new java.awt.Dimension(120, 20));
+        txtPrecioMayor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecioMayorActionPerformed(evt);
+            }
+        });
+        txtPrecioMayor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtPrecioMayorKeyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -356,6 +366,19 @@ public class BuscarCompra extends javax.swing.JPanel {
         btnAnterior.setEnabled(true);
     }//GEN-LAST:event_btnUltimoActionPerformed
 
+    private void txtPrecioMayorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioMayorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioMayorActionPerformed
+
+    private void txtPrecioMayorKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPrecioMayorKeyReleased
+        
+    }//GEN-LAST:event_txtPrecioMayorKeyReleased
+
+    /*
+    La caja de texto txtpreciomayor no controla la longitud ingresada
+    
+    */
+    
     private void buscar(Paginador paginar)
     {
         this.paginador = paginar;
